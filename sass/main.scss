@@ -1,5 +1,19 @@
 //custom variables
-$primary: #c29938;
+$primary: #5C6BC0;
+$dark: #2F3C86;
+
+//import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors:(
+    "altlight": #ADD8E6,
+    "altdark": #131B30,
+    "altmedium": #66a9c8
+);
+
+//Look we're overriding the colors theme variable
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 //import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';

@@ -3,13 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Barbells N' Bellies</title>
     <style>
         section{
-            padding: 60px 0;
+            padding: 30px 0;
         }
     </style>
 
@@ -21,23 +20,23 @@
     <!-- Purpose of div is to divide. -->
    
     <!-- Top bar -->
-    <div class="top-bar py-1">
+    <div class="top-bar py-1 bg-dark">
         <div class="container-xxl d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <i class="bi bi-telephone-fill me-2"></i> <!-- Replace with your desired icon -->
-                <span class="text-dark">Phone: 123-456-7890</span>
+                <i class="bi bi-telephone-fill me-2 text-white"></i> <!-- Replace with your desired icon -->
+                <span class="text-white">Phone: 123-456-7890</span>
             </div>
             <div class="d-flex align-items-center">
-                <i class="bi bi-calendar3-event-fill me-2"></i> <!-- Replace with your desired icon -->
-                <a href="#Experts" class="text-dark">Book an appointment</a>
+                <i class="bi bi-calendar3-event-fill me-2 text-white"></i> <!-- Replace with your desired icon -->
+                <a href="#Experts" class="text-white">Book an appointment</a>
             </div>
         </div>
     </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-light main-navbar mt-3">
+    <nav class="navbar navbar-expand-md navbar-light main-navbar mt-2">
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-secondary">
+                <span class="fw-bold text-secondary text-dark">
                     Bellies N' Barbells
                 </span>
             </a>
@@ -53,19 +52,19 @@
                         <a class="nav-link" href="#Membership">Gym Membership</a>
                     </li>
                     <li class="nav-item ms-2 d-none d-md-inline">
-                        <a class="btn btn-secondary" href="#Membership">Membership Plans</a>
+                        <a class="btn btn-outline-primary" href="#Membership">Membership Plans</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Specialized Services">Specialized Services</a>
+                        <a class="nav-link text-dark" href="#Specialized Services">Specialized Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Location">Locations</a>
+                        <a class="nav-link text-dark" href="#Location">Locations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Experts">Meet Our Experts</a>
+                        <a class="nav-link text-dark" href="#Experts">Meet Our Experts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#AboutUs">About Us</a>
+                        <a class="nav-link text-dark" href="#AboutUs">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -77,9 +76,9 @@
             <div class="row justify-content-start align-items-center">
                 <div class="col-md-5 text-center text-md-start">
                     <h1>
-                        <div class="display-5 text-muted">STRONG BODY AND MIND IN OUR 24/7 GYM, TAILORED JUST FOR <br>YOU!</div>
+                        <div class="display-5 text-dark">STRONG BODY AND MIND IN OUR 24/7 GYM, TAILORED JUST FOR <br> <div class="fw-bolder">YOU!</div> </div>
                     </h1>
-                    <a href="#membership" class="btn btn-secondary btn-lg">Join Now</a>
+                    <a href="#membership" class="btn btn-outline-dark btn-lg "><strong>BOOK NOW</strong></a>
                 </div>
                 <div class="col-md-6 text-end d-none d-md-block justify-content-end">
                     <!-- tooltip -->
@@ -146,7 +145,9 @@
             <div class="row align-items-center">
                 <!-- "About Us" text column -->
                 <div class="col-md-6">
-                    <h1><b>About Us</b></h1>
+                    <div class="text-dark">
+                        <h1><b>About Us</b></h1>
+                    </div>
                     <p>Welcome to <b>Bellies N' Barbells</b>, where we support every stage of pregnancy with strength, wellness, and empowerment. 
                         Founded in 2018, a year after my wife gave birth to our beautiful son, Amadou, our gym is the first Black-owned 
                         gym in Ottawa that focuses on pregnant individuals, aiming to help them every step of their journey.
@@ -178,197 +179,487 @@
         </div>
     </section>
     <!-- Membership -->
-    <section id="Membership" class="bg-dark mt-5">
-        <div class="container-lg">
-            <div class="text-center">
-            <h2>Choose Your Membership</h2>
-            <p class="lead text-muted">Choose a pricing plan that best suits you and your needs.</p>
+    <section id="Membership" class="bg-dark mt-5 my-2" style="border-bottom-left-radius: 300px; 
+    border-bottom-right-radius: 300px; border-top-left-radius: 300px; border-top-right-radius: 300px;  ">
+    <div class="container-lg">
+        <div class="text-center text-white fw-bold">
+            <h1>Choose Your Membership</h1>
+            <p class="lead text-white">Choose a pricing plan that best suits you and your needs.</p>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center g-5">
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title"><b>BASIC</b></h4>
+                        <p class="lead card-subtitle">Satisfy your basic needs</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$29.99</p>
+                        <ul>
+                            <li class="checked">Access to gym facilities</li>
+                            <li class="checked">Use of cardio equipment, strength training area, and designated mobility space.</li>
+                            <li class="checked">Participation in regular fitness classes</li>
+                            <li class="checked">Access to nutrition section for basic guidance and resources</li>
+                            <li class="checked">Juice bar available for purchase</li>
+                        </ul>
+                        <div class="membership-join-button">
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">JOIN <strong>BASIC</strong> PLAN</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="row my-5 align-items-center justify-content-center g-0">
-                <div class=" col-8 col-lg-4 col-xl-3">
-                    <div class="card border-0">
-                        <div class="card-body text-center py-4">
-                            <h4 class="card-title"> Starter Edition</h4>
-                            <p class="lead card-subtitle">eBook download only</p>
-                            <p class="display-5 my-4 text-primary fw-bold">$12.99 </p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit.</p>
-                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-primary border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title"><b>PREMIUM</b></h4>
+                        <p class="lead card-subtitle">Where quality meets luxury</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$39.99</p>
+                        <ul>
+                            <li class="checked">All features included in Basic Membership</li>
+                            <li class="checked">Priority booking for fitness workshops.</li>
+                            <li class="checked">Priority booking for fitness classes.</li>
+                            <li class="checked">Priority booking for fitness.</li>
+                            <li class="checked">Discounted rates for nutrition and personalized meal plans.</li>
+                        </ul>
+                        <div class="membership-join-button">
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">JOIN <strong>PREMIUM</strong> PLAN</a>
                         </div>
                     </div>
                 </div>
-                <div class=" col-9 col-lg-4">
-                    <div class="card border-primary border-2">
-                        <div class="card-header text-center text-primary">Most Popular</div>
-                        <div class="card-body text-center py-5">
-                            <h4 class="card-title"> Complete Edition</h4>
-                            <p class="lead card-subtitle">eBook download only & all downloads</p>
-                            <p class="display-5 my-4 text-primary fw-bold">$18.99 </p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit.</p>
-                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">
-                                Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-8 col-lg-4 col-xl-3">
-                    <div class="card border-0">
-                        <div class="card-body text-center py-4">
-                            <h4 class="card-title"> Ultimate Edition</h4>
-                            <p class="lead card-subtitle">download, updates & extras</p>
-                            <p class="display-5 my-4 text-primary fw-bold">$24.99 </p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit.</p>
-                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+            </div>
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title"><b>DELUXE</b></h4>
+                        <p class="lead card-subtitle">Enjoy benefits to the max</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$49.99</p>
+                        <ul>
+                            <li class="checked">All features included in Premium Membership</li>
+                            <li class="checked">Unlimited access to all fitness classes.</li>
+                            <li class="checked">Personalized fitness schedule tailored to individual needs</li>
+                            <li class="checked">Priority access to doula consultations</li>
+                            <li class="checked">Access to the steam & sauna</li>
+                        </ul>
+                        <div class="membership-join-button">
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">JOIN <strong>DELUXE</strong> PLAN</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="text-center mt-4">
+            <p class="text-primary"><small>*Your payments (plus taxes) will start every two weeks from your start date.<br>
+                There's no annual fee when you sign up, but on or around your anniversary date each year, <br> you'll need to pay a sign-up fee of $39.98
+                (plus taxes). All fees are subjected to applicable taxes.<br> No extra fees are required beyond
+                the specified amounts. For more details, please visit your local club.<br>
+                By signing up, you agree to our <a href="#" class="text-decoration-underline">Terms and Conditions</a>.</small></p>
+        </div>
+    </div>
     </section>
+
+   <!-- Beginning of the second half of the website -->
+   <section id="border" class="bg-altlight py-2 mt-4"> 
+   </section>
+    <div class="position-relative text-center">
+    <img src="assets/Group 1.jpg" class="w-100 img-fluid" alt="Specialized Services">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <h1 class="display-4 fw-bold text-white">OUR SPECIALIZED SERVICES</h1>
+    </div>
+    </div>
+
     <!-- Specialized Services -->
     <section id="SServices">
+        <div class="container-lg">
+            <div class="text-center">
+                <h1><b>Service Categories</b></h1>
+            </div>
+            <hr class="border-5">
+            
+            <div class="row align-items-center justify-content-center my-5 g-3">
+                <div class="col-lg col-md-4 text-center"> 
+                    <h5 class="mb-3">Educational consultations</h5>
+                    <img src="assets/WocFoodSpecialist.png" class="img-fluid mb-3" alt="food">
+                    <p class="text-muted">Gain valuable insights and 
+                        knowledge on pregnancy wellness, fitness, and nutrition through 
+                        personalized consultations with our experts.</p>
+                </div>
+                <div class="col-lg col-md-4 text-center">
+                    <h5 class="mb-3">Health and wellness</h5>
+                    <img src="assets/MatYogaPreggers.jpg" class="img-fluid mb-3" alt="yoga">
+                    <p class="text-muted">Access comprehensive support for your 
+                        overall well-being, including fitness, nutrition, 
+                        and stress relief strategies to keep you healthy and happy.
+                        </p>
+                </div>
+                <div class="col-lg col-md-4 text-center">
+                    <h5 class="mb-3">Classes on Mobility</h5>
+                    <img src="assets/PtAndPreggers.png" class="img-fluid mb-3" alt="mobility">
+                    <p class="text-muted">Join our classes designed to enhance your flexibility 
+                        and ease of movement, helping you stay 
+                        comfortable and active during pregnancy.</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center justify-content-center my-5 g-3">
+                <div class="col-lg col-md-4 text-center"> 
+                    <h5 class="mb-3">Juice Bar</h5>
+                    <img src="assets/Juice bar.png" class="img-fluid mb-3" alt="juice">
+                    <p class="text-muted">Enjoy a variety of nutritious vitmins, mineral packed
+                        and delicious smoothies and juices,
+                        crafted to boost your energy and well-being.</p>
+                </div>
+                <div class="col-lg col-md-4 text-center">
+                    <h5 class="mb-3">Personal Training</h5>
+                    <img src="assets/personal trainer.jpg" class="img-fluid mb-3" alt="Pt">
+                    <p class="text-muted">Get customized workout plans tailored to your pregnancy 
+                        needs with our expert trainers, ensuring safe
+                         and effective fitness routines.</p>
+                </div>
+                <div class="col-lg col-md-4 text-center">
+                    <h5 class="mb-3">Doula Contacts</h5>
+                    <img src="assets/pregnant bellies (bare).jpg" class="img-fluid mb-3" alt="wellness">
+                    <p class="text-muted">Connect with experienced 
+                        doulas who offer support, guidance, and
+                        assistance throughout your pregnancy journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Online classes mini footer-->
+    <section id="onlineclasses" class="bg-dark mt-5 my-2">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-8 text-start">
+                    <h1 class="display-1 fw-bolder text-altlight"><b>CAN'T MAKE IT <br>IN PERSON?</b></h1>
+                </div>
+                <div class="col-md-4 text-end-center">
+                    <h4 class="display-6 text-primary fw-light">Book an online session with one of our experts!</h4>
+                    <a href="#membership" class="btn btn-primary btn-lg mt-2"><strong>JOIN NOW</strong></a>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Meet our experts -->
     <section id="expertise">
+        <div class="container-lg text-center mb-2">
+            <h1><b>Meet Our Experts</b></h1>
+            <hr class="border-5 m-4">
+            <div class="container my-4">
+                <div class="row g-3">
+                    <!-- Card 1 -->
+                    <div class="col-md-6">
+                        <div class="card mb-3 rounded-3 bg-altlight text-white">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/AvantikaBIG.png" class="img-fluid rounded-start" alt="Avantika">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h3 class="card-title">Avantika Patel</h3>
+                                        <div class="fs-4 text-altmedium">Doula Expert</div>
+                                        <p class="card-text">Provides support and guidance during pregnancy, childbirth
+                                            and postpatrum offering emotional and physical assistance throughout the journey.
+                                        </p>
+                                        <a href="#" class="btn btn-altmedium text-white"><b>BOOK</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-6">
+                        <div class="card mb-3 rounded-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/BlackHijGirlBIG.jpg" class="img-fluid rounded-start" alt="darkhijabi">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h3 class="card-title">Zeynab Osman</h3>
+                                        <div class="fs-4 text-muted">Personal Training Expert</div>
+                                        <p class="card-text">Creates customized workout plans tailored to pregnancy,
+                                            ensuring safe and effective fitness routines to maintain strength and confidence.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><b>BOOK</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-6">
+                        <div class="card mb-3 rounded-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/SmileBIG.png" class="img-fluid rounded-start" alt="beautifulgirl">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h3 class="card-title">Dorcas Maboso</h3>
+                                        <div class="fs-4 text-muted">Juice Expert</div>
+                                        <p class="card-text">Crafts nutrious and delicious smoothies and juices to boost 
+                                            energy and enhance overall well-being with vitamins and minerals.</p>
+                                        <a href="#" class="btn btn-primary"><b>BOOK</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-6">
+                        <div class="card mb-3 rounded-3 bg-altlight text-white">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/CLOYBIG.png" class="img-fluid rounded-start" alt="girl from cloy">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h3 class="card-title">Jeongyeon Park</h3>
+                                        <div class="fs-4 text-altmedium">Mobility Expert</div>
+                                        <p class="card-text">Leads classes focused on enhancing flexibility and ease of movement
+                                            during pregnancy, helping to reduce discomfort and improve physical function.
+                                        </p>
+                                        <a href="#" class="btn btn-altmedium text-white"><b>BOOK</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-md-6">
+                        <div class="card mb-3 rounded-3 bg-altlight text-white">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/GoldBgAfroBIG.png" class="img-fluid rounded-start" alt="biracialgyal">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h3 class="card-title">Gloria King</h3>
+                                        <div class="fs-4 text-altmedium">Educational Consultant</div>
+                                        <p class="card-text">Offers personalized sessions providing valuable insights on pregnancy wellness, fitness,
+                                            and nutrition to empower informed health decisions.
+                                        </p>
+                                        <a href="#" class="btn btn-altmedium text-white"><b>BOOK</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-6">
+                        <div class="card mb-3 rounded-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/ModelHijabBIG.png" class="img-fluid rounded-start" alt="model">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h3 class="card-title">Imaam Mohamed Abdulmajid</h3>
+                                        <div class="fs-4 text-muted">Health and Wellness Expert</div>
+                                        <p class="card-text">Delivers comprehensive support for overall well-being during pregnancy, including
+                                            balanced fitness routines, nutritional advice, and stress-relief techniques.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><b>BOOK</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Review list -->
-    <section id="reviews" class="bg-light py-5">
+    <section id="reviews" class="bg-altlight py-5">
         <div class="container-lg text-center mb-4">
-            <h2><i class="bi bi-stars m-2"></i>Client Reviews<i class="bi bi-stars m-2"></i></h2>
+            <h2><i class="bi bi-stars m-2 text-altmedium"></i>Client Reviews<i class="bi bi-stars m-2 text-altmedium"></i></h2>
             <p class="lead">What our clients have to say about our facility</p>
         </div>
-    
         <div class="container">
             <div class="row justify-content-center my-5">
                 <!-- Review 1 -->
                 <div class="col-md-4 mb-4">
-                    <div class="list-group-item py-3">
+                    <div class="rounded p-3 shadow-sm bg-white">
                         <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
                         </div>
-                        <h5 class="mb-1">A must buy</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
-                        <small>Review by Mario</small>
+                        <h5 class="mb-1">Beautiful atmosphere!</h5>
+                        <p class="mb-1">Hi, my name is Oya and I am 4 months pregnant with my son. This is an 
+                            awesome facility and I would highly recommend 
+                            booking sessions with Zeynab. Truly an angel.
+                        </p>
+                        <small>Review by Oya</small>
                     </div>
                 </div>
                 <!-- Review 2 -->
                 <div class="col-md-4 mb-4">
-                    <div class="list-group-item py-3">
+                    <div class="rounded p-3 shadow-sm bg-white">
                         <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star text-altmedium"></i>
                         </div>
-                        <h5 class="mb-1">A must buy</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
-                        <small>Review by Mario</small>
+                        <h5 class="mb-1">Never felt better</h5>
+                        <p class="mb-1"> Despite being in my third trimestre, my body feels better than ever thanks to the counseling
+                            I've taken with Gloria. I have never felt more understood, than at this this gym.
+                        </p>
+                        <small>Review by Jennya</small>
                     </div>
                 </div>
                 <!-- Review 3 -->
                 <div class="col-md-4 mb-4">
-                    <div class="list-group-item py-3">
+                    <div class="rounded p-3 shadow-sm bg-white">
                         <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-fill text-altmedium"></i>
+                            <i class="bi bi-star-half text-altmedium"></i>
                         </div>
-                        <h5 class="mb-1">A must buy</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
-                        <small>Review by Mario</small>
+                        <h5 class="mb-1">Community for mothers</h5>
+                        <p class="mb-1">Love the sense of community Bellies N' Barbells promotes.
+                            In love with their juice and smoothie recipes. My absolute
+                            go to is the "Belly Welly Blueberry" shake.
+                        </p>
+                        <small>Review by Lora</small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!--Contact Us Form-->
-    <section id="contact">
+    <section id="contact" class="py-5">
         <div class="container-lg">
             <div class="text-center">
                 <h2>Stay In Touch</h2>
-                <p class="lead">Questions to ask? Fill out the form to conttact me directly</p>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly</p>
             </div>
-            <div class="row justify-content-center my-5">
+            <div class="row my-5">
+                <!-- Form Column -->
                 <div class="col-lg-6">
                     <form>
-                        <label for="name" class="form-label">First name:</label>
+                        <label for="firstname" class="form-label">First name:</label>
                         <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-person-fill"></i>
                             </span>
-                            <input type="text" class="form-control" id="firstname", placeholder ="e.g Gloria">
-                            <!--TOOLTIP-->
+                            <input type="text" class="form-control" id="firstname" placeholder="e.g. Gloria">
                             <span class="input-group-text">
                                 <span class="advicett" data-bs-placement="bottom" title="Pretty self-explanatory...">
-                                <i class="bi bi-question-circle text-muted"></i>
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
                             </span>
-                            </span>
-                            
                         </div>
-
-                        <label for="name" class="form-label">Last name:</label>
-                        <div class=" mb-4 input-group">
+    
+                        <label for="lastname" class="form-label">Last name:</label>
+                        <div class="mb-4 input-group">
                             <span class="input-group-text">
-                            <i class="bi bi-person-fill"></i>
+                                <i class="bi bi-person-fill"></i>
                             </span>
-                        <input type="text" class="form-control" id="lastname", placeholder ="e.g Kipembe">
+                            <input type="text" class="form-control" id="lastname" placeholder="e.g. Kipembe">
                         </div>
-
-                        <label for="email" class="form-label"> Email Address:</label>
+    
+                        <label for="email" class="form-label">Email Address:</label>
                         <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-envelope-at"></i>
                             </span>
-                            <!-- type, class of form control, the id, and the placeholder-->
-                        <input type="email" class="form-control" id="email" placeholder="e.g. Gloria@kipembe@gmail.com">
-                        <!--TOOLTIP-->
-                        <span class="input-group-text">
-                            <span class="advicett" data-bs-placement="bottom" title="Enter an email address we can reply to.">
-                            <i class="bi bi-question-circle text-muted"></i>
-                        </span>
-                        </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. Gloria@kipembe@gmail.com">
+                            <span class="input-group-text">
+                                <span class="advicett" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
-
-                        <label for="subject" class="form-label"> What is your inquiry about?</label>
+    
+                        <label for="subject" class="form-label">What is your inquiry about?</label>
                         <div class="input-group mb-4">
                             <span class="input-group-text">
                                 <i class="bi bi-chat-right-dots-fill"></i>
                             </span>
-                            <select class="form-select" id="subject" >
+                            <select class="form-select" id="subject">
                                 <option value="Membership" selected>Membership Inquiry</option>
-                                <option value="SServices" >Specialzed Services</option>
+                                <option value="SServices">Specialized Services</option>
                                 <option value="Online">Online Gym Session</option>
-                                <option value="Merch" >Merch Inquiry</option>
-                                <option value="Other" >Other Inquiry</option>
+                                <option value="Merch">Merch Inquiry</option>
+                                <option value="Other">Other Inquiry</option>
                             </select>
                         </div>
-                        
+    
                         <div class="form-floating mb-4 mt-5">
                             <textarea id="inquiry" class="form-control" style="height: 140px"></textarea>
                             <label for="inquiry" class="form-label">Leave a comment/Your inquiry...</label>
                         </div>
-
-                        <div class="mb-4 text-center">
-                            <button type="submit" class="btn btn-secondary">Submit</button>
+    
+                        <div class="mb-4 text-start">
+                            <button type="submit" class="btn btn-primary">SUBMIT</button>
                         </div>
                     </form>
+                </div>
+                <!-- Image Column -->
+                <div class="col-lg-6 text-center">
+                    <img src="assets/womanworkingoutdumbbell.png" class="img-fluid" alt="Stay in Touch Image">
                 </div>
             </div>
         </div>
     </section>
-    
-    <!--FOOTER-->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Social Media Section -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+            <span class="text-white">Get connected with us on social networks:</span>
+        </div>
+        <div>
+            <a href="" class="me-4 text-white"><i class="bi bi-facebook"></i></a>
+            <a href="" class="me-4 text-white"><i class="bi bi-twitter"></i></a>
+            <a href="" class="me-4 text-white"><i class="bi bi-google"></i></a>
+            <a href="" class="me-4 text-white"><i class="bi bi-instagram"></i></a>
+            <a href="" class="me-4 text-white"><i class="bi bi-linkedin"></i></a>
+            <a href="" class="me-4 text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+    </section>
 
+    <!-- Links and Company Info Section -->
+    <section class="bg-dark text-white">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h2 class="text-uppercase fw-bold mb-1">Bellies N' Barbells</h2>
+                    <p class="slogan fw-light">Strength for Two: Where Expecting Meets Empowerment.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                    <p><a href="#!" class="text-reset">Juice bar</a></p>
+                    <p><a href="#!" class="text-reset">Merchandise</a></p>
+                    <p><a href="#!" class="text-reset">Other</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+                    <p><a href="#!" class="text-reset">Memberships</a></p>
+                    <p><a href="#!" class="text-reset">Careers</a></p>
+                    <p><a href="#!" class="text-reset">About Us</a></p>
+                    <p><a href="#!" class="text-reset">Help</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="bi bi-envelope me-3"></i>bellies@nbarbells.com</p>
+                    <p><i class="bi bi-phone me-3"></i>(123)-456-7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="text-center text-altmedium p-5">
+        © 2024 Bellies N' Barbells. All rights reserved.
+    </div>
+    </footer>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
