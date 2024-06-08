@@ -7,7 +7,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     const address = `${city},${province},${postalCode}`;
 
     const encodedAddress = encodeURIComponent(address);
-    const iframeSrc = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAVAFhvRyAL8XJgFD8yf9lF3RgPx4ErRXE&q=${encodedAddress}`;
+    const iframeSrc = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCte0ZairAQAhxVahzUWEtSjqm2K5XbZ9w&q=${encodedAddress}`;
 
     document.getElementById('mapIframe').src = iframeSrc;
 });
