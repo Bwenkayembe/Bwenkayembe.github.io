@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Barbells N' Bellies</title>
+    <title>Bellies N' Barbells</title>
     <style>
         section{
             padding: 30px 0;
@@ -28,7 +28,7 @@
             </div>
             <div class="d-flex align-items-center">
                 <i class="bi bi-calendar3-event-fill me-2 text-white"></i> <!-- Replace with your desired icon -->
-                <a href="#Experts" class="text-white">Book an appointment</a>
+                <a href="booking.html" class="text-white">Book an appointment</a>
             </div>
         </div>
     </div>
@@ -60,7 +60,7 @@
                         <a class="nav-link text-dark" href="#SServices">Specialized Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#Location">Locations</a>
+                        <a class="nav-link text-dark" href="#FindAClub">Locations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#expertise">Meet Our Experts</a>
@@ -80,7 +80,7 @@
                 <div class="col-md-5 text-center text-md-start">
                     <h1 class="fw-bold">
                         <div class="display-5 text-black fw-bold">
-                            STRONG BODY AND MIND IN OUR 24/7 GYM, TAILORED<br> 
+                            STRONG BODY AND MIND IN OUR 24/7 GYM, TAILORED FOR<br> 
                             <div class="fw-bolder">YOU!</div> 
                         </div>
                     </h1>
@@ -105,7 +105,7 @@
                     <div class="row">
                         <div class="col-sm-4 quick-fact text-center"> <!-- Adjusted column width and added text-center class -->
                             <div>
-                                <a href="#Location">
+                                <a href="#FindAClub">
                                     <img src="assets/LOCATIONFORUI.png"class="img-fluid" style="width: 80px; height: 80px;">
                                 </a>
                             </div>
@@ -379,7 +379,7 @@
                 </div>
                 <div class="col-md-4 text-end-center">
                     <h4 class="display-6 text-primary fw-light">Book an online session with one of our experts!</h4>
-                    <a href="#membership" class="btn btn-primary btn-lg mt-2"><strong>Book Virtual Session</strong></a>
+                    <a href="booking.html" class="btn btn-primary btn-lg mt-2"><strong>Book Virtual Session</strong></a>
                 </div>
             </div>
         </div>
@@ -404,14 +404,35 @@
                                         <h3 class="card-title">Avantika Patel</h3>
                                         <div class="fs-4 text-altmedium">Doula Expert</div>
                                         <p class="card-text">Provides support and guidance during pregnancy, childbirth
-                                            and postpatrum offering emotional and physical assistance throughout the journey.
+                                            and postpartum offering emotional and physical assistance throughout the journey.
                                         </p>
-                                        <a href="#" class="btn btn-altmedium text-white"><b>BOOK</b></a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                                            <b>BOOK</b>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal1Label">CONFIRM BOOKING</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Please confirm down below that you would like to book a session with Doula Expert; <b> Avantika Patel</b>.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary bg-success" id="confirm1">CONFIRM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <!-- Card 2 -->
                     <div class="col-md-6">
                         <div class="card mb-3 rounded-3">
@@ -426,12 +447,33 @@
                                         <p class="card-text">Creates customized workout plans tailored to pregnancy,
                                             ensuring safe and effective fitness routines to maintain strength and confidence.
                                         </p>
-                                        <a href="#" class="btn btn-primary"><b>BOOK</b></a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                                            <b>BOOK</b>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal2Label">CONFIRM BOOKING</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Please confirm down below that you would like to book a session with Personal Training Expert; <b>Zeynab Osman</b>.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary bg-success" id="confirm2">CONFIRM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <!-- Card 3 -->
                     <div class="col-md-6">
                         <div class="card mb-3 rounded-3">
@@ -443,14 +485,36 @@
                                     <div class="card-body text-start">
                                         <h3 class="card-title">Dorcas Maboso</h3>
                                         <div class="fs-4 text-muted">Juice Expert</div>
-                                        <p class="card-text">Crafts nutrious and delicious smoothies and juices to boost 
-                                            energy and enhance overall well-being with vitamins and minerals.</p>
-                                        <a href="#" class="btn btn-primary"><b>BOOK</b></a>
+                                        <p class="card-text">Crafts nutritious and delicious smoothies and juices to boost 
+                                            energy and enhance overall well-being with vitamins and minerals.
+                                        </p>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                                            <b>BOOK</b>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal 3 -->
+                    <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal3Label">CONFIRM BOOKING</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Please confirm down below that you would like to book a session with Juice Expert; <b>Dorcas Maboso</b>.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary bg-success" id="confirm3">CONFIRM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <!-- Card 4 -->
                     <div class="col-md-6">
                         <div class="card mb-3 rounded-3 bg-altlight text-white">
@@ -465,12 +529,33 @@
                                         <p class="card-text">Leads classes focused on enhancing flexibility and ease of movement
                                             during pregnancy, helping to reduce discomfort and improve physical function.
                                         </p>
-                                        <a href="#" class="btn btn-altmedium text-white"><b>BOOK</b></a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+                                            <b>BOOK</b>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal 4 -->
+                    <div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal4Label">CONFIRM BOOKING</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Please confirm down below that you would like to book a session with Mobility Expert; <b>Jeongyeon Park</b>.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary bg-success" id="confirm4">CONFIRM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <!-- Card 5 -->
                     <div class="col-md-6">
                         <div class="card mb-3 rounded-3 bg-altlight text-white">
@@ -485,12 +570,33 @@
                                         <p class="card-text">Offers personalized sessions providing valuable insights on pregnancy wellness, fitness,
                                             and nutrition to empower informed health decisions.
                                         </p>
-                                        <a href="#" class="btn btn-altmedium text-white"><b>BOOK</b></a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">
+                                            <b>BOOK</b>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal 5 -->
+                    <div class="modal fade" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal5Label">CONFIRM BOOKING</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Please confirm down below that you would like to book a session with Educational Consultant; <b>Gloria King</b>.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary bg-success" id="confirm5">CONFIRM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <!-- Card 6 -->
                     <div class="col-md-6">
                         <div class="card mb-3 rounded-3">
@@ -505,17 +611,96 @@
                                         <p class="card-text">Delivers comprehensive support for overall well-being during pregnancy, including
                                             balanced fitness routines, nutritional advice, and stress-relief techniques.
                                         </p>
-                                        <a href="#" class="btn btn-primary"><b>BOOK</b></a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">
+                                            <b>BOOK</b>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal 6 -->
+                    <div class="modal fade" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal6Label">CONFIRM BOOKING</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Please confirm down below that you would like to book a session with Health and Wellness Expert;<b> Imaam Mohamed Abdulmajid</b>.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary bg-success" id="confirm6">CONFIRM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Image Modal -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Booking Confirmed</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img src="assets/BOOKING PAGE2.png" class="img-fluid" alt="Confirmation Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- JavaScript to handle the confirmation button click -->
+                    <script>
+                        document.getElementById('confirm1').addEventListener('click', function () {
+                            var modal1 = new bootstrap.Modal(document.getElementById('modal1'));
+                            modal1.hide();
+                            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                            imageModal.show();
+                        });
+    
+                        document.getElementById('confirm2').addEventListener('click', function () {
+                            var modal2 = new bootstrap.Modal(document.getElementById('modal2'));
+                            modal2.hide();
+                            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                            imageModal.show();
+                        });
+    
+                        document.getElementById('confirm3').addEventListener('click', function () {
+                            var modal3 = new bootstrap.Modal(document.getElementById('modal3'));
+                            modal3.hide();
+                            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                            imageModal.show();
+                        });
+    
+                        document.getElementById('confirm4').addEventListener('click', function () {
+                            var modal4 = new bootstrap.Modal(document.getElementById('modal4'));
+                            modal4.hide();
+                            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                            imageModal.show();
+                        });
+    
+                        document.getElementById('confirm5').addEventListener('click', function () {
+                            var modal5 = new bootstrap.Modal(document.getElementById('modal5'));
+                            modal5.hide();
+                            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                            imageModal.show();
+                        });
+    
+                        document.getElementById('confirm6').addEventListener('click', function () {
+                            var modal6 = new bootstrap.Modal(document.getElementById('modal6'));
+                            modal6.hide();
+                            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                            imageModal.show();
+                        });
+                    </script>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Review list -->
     <section id="reviews" class="bg-altlight py-5">
         <div class="container-lg text-center mb-4">

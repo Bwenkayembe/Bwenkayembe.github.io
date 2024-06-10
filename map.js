@@ -1,5 +1,3 @@
-// map.js
-
 document.getElementById('submitBtn').addEventListener('click', function() {
     const city = document.getElementById('city').value;
     const province = document.getElementById('province').value;

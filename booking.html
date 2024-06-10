@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="calendar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <title>Barbells N' Bellies</title>
+    <script src="calendar.js" defer></script>
 </head>
-<body>
+<body style="font-family: 'Helvetica Neue', sans-serif;">
 <!--Header-->
 <header class="mb-0"> 
     <!-- Top bar -->
     <div class="top-bar py-1 bg-dark">
         <div class="container-xxl d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <i class="bi bi-telephone-fill me-2 text-white"></i> <!-- Replace with your desired icon -->
+                <i class="bi bi-telephone-fill me-2 text-white"></i>
                 <span class="text-white">Phone: 123-456-7890</span>
             </div>
             <div class="d-flex align-items-center">
-                <i class="bi bi-calendar3-event-fill me-2 text-white"></i> <!-- Replace with your desired icon -->
+                <i class="bi bi-calendar3-event-fill me-2 text-white"></i>
                 <a href="#Experts" class="text-white">Book an appointment</a>
             </div>
         </div>
@@ -38,25 +41,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Navbar links -->
-                <div class="collapse navbar-collapse justify-content-center align-items-center" id="main-nav">
+                <div class="collapse navbar-collapse justify-content-end align-items-end" id="main-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item d-md-none">
-                            <a class="nav-link" href="#Membership">Gym Membership</a>
+                            <a class="nav-link" href="index.html#Membership">Gym Membership</a>
                         </li>
                         <li class="nav-item ms-2 d-none d-md-inline">
-                            <a class="btn btn-outline-dark" href="#Membership">Membership Plans</a>
+                            <a class="btn btn-outline-dark" href="index.html#Membership">Membership Plans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#Specialized Services">Specialized Services</a>
+                            <a class="nav-link text-dark" href="index.html">Specialized Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#Location">Locations</a>
+                            <a class="nav-link text-dark" href="index.html#FindAClub">Locations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#Experts">Meet Our Experts</a>
+                            <a class="nav-link text-dark" href="index.html#expertise">Meet Our Experts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#AboutUs">About Us</a>
+                            <a class="nav-link text-dark" href="index.html#AboutUs">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -64,13 +67,133 @@
         </nav>
     </section>
 </header>
-<!--BOOK A CONSULTATION-->
+<!--BOOK A CONSULTATION PICTURE-->
 <div class="position-relative text-center">
-    <img src="assets/BlurryPictureForUiYeah.png" class="w-100 img-fluid" alt="Booking" style="max-height: 300px;">
+    <img src="assets/BOOKING PAGE.png" class="w-100 img-fluid" alt="Booking" style="max-height: 300px;">
     <div class="position-absolute top-50 start-50 translate-middle">
         <h2 class="display-4 fw-bold text-white">BOOK A CONSULTATION WITH US</h2>
     </div> 
 </div>
+<!--ADD INFORMATION-->
+
+<!--THE CALENDAR-->
+<section id="calendar" style="margin-bottom: 50px;">
+    <div class="container">
+        <!-- Text added above the calendar -->
+        <div class="text-center mb-3">
+            <span class="select-day-text">Select a day</span>
+        </div>
+        <div class="calendar">
+            <div class="calendar-header">
+                <span class="month-picker" id="month-picker"> May </span>
+                <div class="year-picker" id="year-picker">
+                    <span class="year-change" id="pre-year">
+                        <pre></pre>
+                    </span>
+                    <span id="year">2020 </span>
+                    <span class="year-change" id="next-year">
+                        <pre>></pre>
+                    </span>
+                </div>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-week-days">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-days">
+                </div>
+            </div>
+            <div class="calendar-footer">
+            </div>
+            <div class="date-time-formate">
+                <div class="day-text-formate">TODAY</div>
+                <div class="date-time-value">
+                    <div class="time-formate">02:51:20</div>
+                    <div class="date-formate">23 - July - 2022</div>
+                </div>
+            </div>
+            <div class="month-list"></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Custom CSS for the text -->
+<style>
+    .select-day-text {
+        font-weight: bold;
+        font-size: 1.25rem; /* Medium text size */
+    }
+</style>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book Appointment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Select a time slot for <span id="selected-date"></span>:</h6>
+        <form id="booking-form">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="time-slot" id="slot1" value="9:00 AM">
+            <label class="form-check-label" for="slot1">
+              9:00 AM
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="time-slot" id="slot2" value="10:00 AM">
+            <label class="form-check-label" for="slot2">
+              10:00 AM
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="time-slot" id="slot3" value="12:30 PM">
+            <label class="form-check-label" for="slot3">
+              12:30 PM
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="time-slot" id="slot4" value="2:00 PM">
+            <label class="form-check-label" for="slot4">
+              2:00 PM
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="confirm-booking">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img src="assets/BOOKING PAGE.png" class="w-100 img-fluid" alt="Booking">
+        <div class="position-absolute top-50 start-50 translate-middle text-white">
+          <h2>Thank you for booking a consultation!</h2>
+          <p>An email will shortly be sent to you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-dark text-muted">
     <!-- Social Media Section -->
@@ -122,9 +245,9 @@
     </div>
 </footer>
 <!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 <script src="scripts.js"></script>
 
 <script>
@@ -132,6 +255,177 @@
     tooltips.forEach (t=> {
         new bootstrap.Tooltip(t)
     })
+</script>
+<script>
+  const isLeapYear = (year) => {
+    return (
+      (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) ||
+      (year % 100 === 0 && year % 400 === 0)
+    );
+  };
+  const getFebDays = (year) => {
+    return isLeapYear(year) ? 29 : 28;
+  };
+  let calendar = document.querySelector('.calendar');
+  const month_names = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+  let month_picker = document.querySelector('#month-picker');
+  const dayTextFormate = document.querySelector('.day-text-formate');
+  const timeFormate = document.querySelector('.time-formate');
+  const dateFormate = document.querySelector('.date-formate');
+  
+  month_picker.onclick = () => {
+    month_list.classList.remove('hideonce');
+    month_list.classList.remove('hide');
+    month_list.classList.add('show');
+    dayTextFormate.classList.remove('showtime');
+    dayTextFormate.classList.add('hidetime');
+    timeFormate.classList.remove('showtime');
+    timeFormate.classList.add('hideTime');
+    dateFormate.classList.remove('showtime');
+    dateFormate.classList.add('hideTime');
+  };
+  
+  const generateCalendar = (month, year) => {
+    let calendar_days = document.querySelector('.calendar-days');
+    calendar_days.innerHTML = '';
+    let calendar_header_year = document.querySelector('#year');
+    let days_of_month = [
+      31,
+      getFebDays(year),
+      31,
+      30,
+      31,
+      30,
+      31,
+      31,
+      30,
+      31,
+      30,
+      31,
+    ];
+    
+    let currentDate = new Date();
+    
+    month_picker.innerHTML = month_names[month];
+    
+    calendar_header_year.innerHTML = year;
+    
+    let first_day = new Date(year, month);
+  
+    for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
+      let day = document.createElement('div');
+  
+      if (i >= first_day.getDay()) {
+        day.innerHTML = i - first_day.getDay() + 1;
+        day.addEventListener('click', () => openBookingModal(i - first_day.getDay() + 1, month, year));
+
+        if (i - first_day.getDay() + 1 === currentDate.getDate() &&
+          year === currentDate.getFullYear() &&
+          month === currentDate.getMonth()
+        ) {
+          day.classList.add('current-date');
+        }
+      }
+      calendar_days.appendChild(day);
+    }
+  };
+  
+  let month_list = calendar.querySelector('.month-list');
+  month_names.forEach((e, index) => {
+    let month = document.createElement('div');
+    month.innerHTML = `<div>${e}</div>`;
+  
+    month_list.append(month);
+    month.onclick = () => {
+      currentMonth.value = index;
+      generateCalendar(currentMonth.value, currentYear.value);
+      month_list.classList.replace('show', 'hide');
+      dayTextFormate.classList.remove('hideTime');
+      dayTextFormate.classList.add('showtime');
+      timeFormate.classList.remove('hideTime');
+      timeFormate.classList.add('showtime');
+      dateFormate.classList.remove('hideTime');
+      dateFormate.classList.add('showtime');
+    };
+  });
+  
+  (function () {
+    month_list.classList.add('hideonce');
+  })();
+  document.querySelector('#pre-year').onclick = () => {
+    --currentYear.value;
+    generateCalendar(currentMonth.value, currentYear.value);
+  };
+  document.querySelector('#next-year').onclick = () => {
+    ++currentYear.value;
+    generateCalendar(currentMonth.value, currentYear.value);
+  };
+  
+  let currentDate = new Date();
+  let currentMonth = { value: currentDate.getMonth() };
+  let currentYear = { value: currentDate.getFullYear() };
+  generateCalendar(currentMonth.value, currentYear.value);
+
+  const todayShowTime = document.querySelector('.time-formate');
+  const todayShowDate = document.querySelector('.date-formate');
+  
+  const currshowDate = new Date();
+  const showCurrentDateOption = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    weekday: 'long',
+  };
+  const currentDateFormate = new Intl.DateTimeFormat(
+    'en-US',
+    showCurrentDateOption
+  ).format(currshowDate);
+  todayShowDate.textContent = currentDateFormate;
+  setInterval(() => {
+    const timer = new Date();
+    const option = {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+    };
+    const formateTimer = new Intl.DateTimeFormat('en-us', option).format(timer);
+    let time = `${`${timer.getHours()}`.padStart(
+      2,
+      '0'
+    )}:${`${timer.getMinutes()}`.padStart(
+      2,
+      '0'
+    )}: ${`${timer.getSeconds()}`.padStart(2, '0')}`;
+    todayShowTime.textContent = formateTimer;
+  }, 1000);
+
+  const openBookingModal = (day, month, year) => {
+    const selectedDate = `${month_names[month]} ${day}, ${year}`;
+    document.getElementById('selected-date').textContent = selectedDate;
+    new bootstrap.Modal(document.getElementById('bookingModal')).show();
+  };
+
+  document.getElementById('confirm-booking').addEventListener('click', () => {
+    const selectedSlot = document.querySelector('input[name="time-slot"]:checked');
+    if (selectedSlot) {
+      new bootstrap.Modal(document.getElementById('confirmationModal')).show();
+    } else {
+      alert('Please select a time slot.');
+    }
+  });
 </script>
 </body>
 </html>
